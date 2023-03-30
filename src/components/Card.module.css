@@ -1,0 +1,109 @@
+.cardBox {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.menu .created {
+  color: var(--blue);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.menu .done {
+  color: var(--purple);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.menu .created span {
+  margin-left: 0.5rem;
+  background: var(--gray-400);
+  color: var(--gray-200);
+
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+.menu .done span {
+  margin-left: 0.5rem;
+  background: var(--gray-400);
+  color: var(--gray-200);
+
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+.progressBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.progress {
+  width: 100%;
+  border: 0;
+}
+
+.progress::-webkit-progress-bar {
+  background: var(--gray-400);
+  border-radius: 8px;
+}
+
+.progress::-webkit-progress-value {
+  background: -webkit-linear-gradient(left, #4EA8DE 0%, #5E60CE 100%);
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.progressBar span {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  font-weight: bold;
+
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+
+}
+
+.emptyTask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-400);
+
+  border-top: 1px solid var(--gray-300);
+  padding: 4rem 1.5rem;
+}
+
+.emptyTask strong {
+  margin-top: 1rem;
+  line-height: 1.4;
+
+  color: var(--gray-300);
+}
+
+.emptyTask p {
+  color: var(--gray-300);
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .cardBox {
+    padding: 1rem;
+  }
+}

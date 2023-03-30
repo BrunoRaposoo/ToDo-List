@@ -1,0 +1,97 @@
+.taskBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid var(--gray-400);
+
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  background: var(--gray-500);
+  padding: 1.25rem;
+  border-radius: 8px;
+}
+
+.taskContent {
+  display: flex;
+  align-items: center;
+}
+
+.taskItem, .taskSelected {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.taskItem {
+  background: transparent;
+  border: 3px solid var(--blue);
+  transition: 0.175s;
+}
+
+.taskItem:hover {
+  border: 3px solid var(--blue-dark);
+}
+
+.taskSelected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--purple-dark);
+  color: var(--gray-100);
+  border: 0;
+
+  transition: 0.175s;
+}
+
+.taskSelected:hover {
+  background: var(--purple);
+  border: 0;
+}
+
+.TaskTextSelected, .taskItemText {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  gap: 1.5rem;
+}
+
+.TaskTextSelected {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.category {
+  width: 22%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.35rem;
+}
+
+.color {
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  background: var(--purple-dark);
+}
+
+.taskBox .deleteTask {
+  background: transparent;
+  border: none;
+  color: var(--gray-300);
+  cursor: pointer;
+
+  line-height: 0;
+  border-radius: 2px;
+
+  transition: .175s;
+}
+
+.taskBox .deleteTask:hover {
+  color: var(--danger);
+}
